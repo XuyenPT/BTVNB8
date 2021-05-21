@@ -34,17 +34,14 @@ public class mangdachieu {
 
         int[] B = new int[n];
         System.out.println("Cac phan tu o hang 2: ");
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (i == 1) {
-                    B[i] = A[i][j];
-                    System.out.print(B[i] + "\t");
+        for (int j = 0; j < n; j++) {
+                B[j] = A[1][j];
+                System.out.print(B[j] + "\t");
                 }
-            }
-        }
-            int tg;
-            for (int i = 0; i < n - 1; i++) {
-                for (int j = i + 1; j < n; j++) {
+
+        int tg;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j < n; j++) {
                     if (B[i] > B[j]) {
                         tg = B[i];
                         B[i] = B[j];
